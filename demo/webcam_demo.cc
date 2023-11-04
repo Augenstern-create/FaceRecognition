@@ -74,8 +74,10 @@ int main(int argc, char** argv)
     }
 
     int cnt = 0;
+    int number=0;
     while(true)
     {
+        // if(number>20)break;
         char fname[50];
         snprintf(fname, 50, "images/%d.jpg", cnt);
 
@@ -95,6 +97,7 @@ int main(int argc, char** argv)
 
         cv::Mat frame_paint = frame.clone();
         BREAK_ON_NEQ(worker.FrocessFrame(frame, frame_paint), TNN_OK);
+        number++;
 
 #ifdef FAKE_FRAME
         cv::imwrite("result.jpg", frame_paint);
@@ -109,7 +112,7 @@ int main(int argc, char** argv)
 #endif
 
         cnt = (cnt + 1 ) % 10000;
-
+        
     }
 
     return 0;

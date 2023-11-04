@@ -33,7 +33,7 @@ Status FaceDetectAligner::Init(std::vector<std::shared_ptr<TNNSDKSample>> sdks) 
 Status FaceDetectAligner::Predict(std::shared_ptr<TNNSDKInput> sdk_input,
                                   std::shared_ptr<TNNSDKOutput> &sdk_output) {
     Status status = TNN_OK;
-    
+    LOGE("FaceDetectAligner Predict\n");
     if (!sdk_input || sdk_input->IsEmpty()) {
         status = Status(TNNERR_PARAM_ERR, "input image is empty ,please check!");
         LOGE("input image is empty ,please check!\n");
@@ -55,7 +55,7 @@ Status FaceDetectAligner::Predict(std::shared_ptr<TNNSDKInput> sdk_input,
     std::shared_ptr<TNNSDKOutput> sdk_output2 = nullptr;
     
     std::shared_ptr<TNN_NS::Mat> phase1_pts = nullptr;
-    
+    LOGE("%d\n",__LINE__);
     //phase1 model
     {
         // 1) prepare input for phase1 model
@@ -80,35 +80,35 @@ Status FaceDetectAligner::Predict(std::shared_ptr<TNNSDKInput> sdk_input,
             }
             if(face_info.size() <= 0) {
                 //no faces, return
-                LOGD("Error no faces found!\n");
+                LOGE("Error no faces found!\n");
                 return status;
             }
             auto face = face_info[0];
             // scale the face point according to the original image size
             auto face_orig = face.AdjustToViewSize(image_orig_height, image_orig_width, 2);
-            LOGD("face_origin:(%f,%f,%f,%f), conf=%.4f\n", face_orig.x1, face_orig.y1, face_orig.x2, face_orig.y2, face_orig.score);
+            LOGE("face_origin:(%f,%f,%f,%f), conf=%.4f\n", face_orig.x1, face_orig.y1, face_orig.x2, face_orig.y2, face_orig.score);
             
             // set face region for phase1 model
             if (!(predictor_align1_cast &&
                   predictor_align1_cast->SetFaceRegion(face_orig.x1, face_orig.y1, face_orig.x2, face_orig.y2))) {
                 //no invalid faces, return
-                LOGD("Error no valid faces found!\n");
+                LOGE("Error no valid faces found!\n");
                 return status;
             }
         }
-        
+        LOGE("%d\n",__LINE__);
         // 2) predict
         status = predictor_align1_cast->Predict(std::make_shared<YoutuFaceAlignInput>(image_mat), sdk_output1);
         RETURN_ON_NEQ(status, TNN_OK);
-        
+        LOGE("%d\n",__LINE__);
         // update prev_face
         has_prev_face_ = predictor_align1_cast->GetPrevFace();
         if(!has_prev_face_) {
-            LOGD("Next frame will use face detector!\n");
+            LOGE("Next frame will use face detector!\n");
         }
         phase1_pts = predictor_align1_cast->GetPrePts();
     }
-    
+    LOGE("%d\n",__LINE__);
     //phase 2
     std::shared_ptr<TNN_NS::Mat> phase2_pts = nullptr;
     //phase2 model
@@ -136,7 +136,9 @@ Status FaceDetectAligner::Predict(std::shared_ptr<TNNSDKInput> sdk_input,
         output->face.key_points = points;
         output->face.image_height = image_orig_height;
         output->face.image_width  = image_orig_width;
+        
     }
+    LOGE("FaceDetectAligner Predict stop\n");
     return TNN_OK;
 }
 }

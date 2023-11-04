@@ -162,8 +162,8 @@ Status Worker::DrawUI(cv::Mat &frame) {
 
     // CMD
     std::vector<std::string> sentences = {
-        // // "a: toggle facealign",
-        // "d: toggle facedetect",
+        "a: toggle facealign",
+        "d: toggle facedetect",
         "c: quit",
         "Press:",
     };
@@ -245,7 +245,7 @@ Status Worker::AlignWithPaint(cv::Mat &frame, cv::Mat &frame_paint) {
     //Predict
     std::shared_ptr<TNN_NS::TNNSDKOutput> sdk_output = aligner_->CreateSDKOutput();
     CHECK_TNN_STATUS(aligner_->Predict(std::make_shared<TNN_NS::TNNSDKInput>(image_mat), sdk_output));
-
+    LOGE("aligner_.type: %s\n",typeid(aligner_).name());
     TNN_NS::YoutuFaceAlignInfo face_info;
     if (sdk_output && dynamic_cast<TNN_NS::YoutuFaceAlignOutput *>(sdk_output.get())) {
         auto face_output = dynamic_cast<TNN_NS::YoutuFaceAlignOutput *>(sdk_output.get());
@@ -256,9 +256,11 @@ Status Worker::AlignWithPaint(cv::Mat &frame, cv::Mat &frame_paint) {
     const int image_orig_width  = nchw[3];
 
     auto face = face_info.AdjustToViewSize(image_orig_height, image_orig_width, 2);
+
     for(auto xy : face.key_points) {
           cv::circle(frame_paint, cv::Point(xy.first, xy.second), 2, cv::Scalar( 0, 128, 255 ), cv::FILLED, cv::LINE_8);
     }
+
 
     return TNN_OK;
 };

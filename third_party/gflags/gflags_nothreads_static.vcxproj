@@ -22,7 +22,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{92121044-B01A-366B-859E-C744723A9ACF}</ProjectGuid>
+    <ProjectGuid>{4375D724-C5D0-3AC1-A6B2-EF584F094071}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0.22000.0</WindowsTargetPlatformVersion>
     <Platform>x64</Platform>
@@ -59,26 +59,26 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\FaceRecognition\third_party\gflags\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\Augenstern\FaceRecognition\third_party\gflags\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">gflags_nothreads_static.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">gflags_nothreads_static</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\FaceRecognition\third_party\gflags\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\Augenstern\FaceRecognition\third_party\gflags\Release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">gflags_nothreads_static.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">gflags_nothreads_static</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\FaceRecognition\third_party\gflags\MinSizeRel\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\Augenstern\FaceRecognition\third_party\gflags\MinSizeRel\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">gflags_nothreads_static.dir\MinSizeRel\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">gflags_nothreads_static</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\FaceRecognition\third_party\gflags\RelWithDebInfo\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\Augenstern\FaceRecognition\third_party\gflags\RelWithDebInfo\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">gflags_nothreads_static.dir\RelWithDebInfo\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">gflags_nothreads_static</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>E:\FaceRecognition\include;E:\FaceRecognition\third_party\gflags\include;E:\FaceRecognition\third_party\gflags\src;E:\FaceRecognition\third_party\gflags\include\gflags;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\Augenstern\FaceRecognition\include;E:\Augenstern\FaceRecognition\third_party\gflags\include;E:\Augenstern\FaceRecognition\third_party\gflags\src;E:\Augenstern\FaceRecognition\third_party\gflags\include\gflags;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -97,10 +97,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;GFLAGS_IS_A_DLL=0;NO_THREADS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>E:\FaceRecognition\include;E:\FaceRecognition\third_party\gflags\include;E:\FaceRecognition\third_party\gflags\src;E:\FaceRecognition\third_party\gflags\include\gflags;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\Augenstern\FaceRecognition\include;E:\Augenstern\FaceRecognition\third_party\gflags\include;E:\Augenstern\FaceRecognition\third_party\gflags\src;E:\Augenstern\FaceRecognition\third_party\gflags\include\gflags;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>E:\FaceRecognition\include;E:\FaceRecognition\third_party\gflags\include;E:\FaceRecognition\third_party\gflags\src;E:\FaceRecognition\third_party\gflags\include\gflags;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\Augenstern\FaceRecognition\include;E:\Augenstern\FaceRecognition\third_party\gflags\include;E:\Augenstern\FaceRecognition\third_party\gflags\src;E:\Augenstern\FaceRecognition\third_party\gflags\include\gflags;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -113,7 +113,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>E:\FaceRecognition\include;E:\FaceRecognition\third_party\gflags\include;E:\FaceRecognition\third_party\gflags\src;E:\FaceRecognition\third_party\gflags\include\gflags;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\Augenstern\FaceRecognition\include;E:\Augenstern\FaceRecognition\third_party\gflags\include;E:\Augenstern\FaceRecognition\third_party\gflags\src;E:\Augenstern\FaceRecognition\third_party\gflags\include\gflags;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
@@ -132,10 +132,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;GFLAGS_IS_A_DLL=0;NO_THREADS;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>E:\FaceRecognition\include;E:\FaceRecognition\third_party\gflags\include;E:\FaceRecognition\third_party\gflags\src;E:\FaceRecognition\third_party\gflags\include\gflags;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\Augenstern\FaceRecognition\include;E:\Augenstern\FaceRecognition\third_party\gflags\include;E:\Augenstern\FaceRecognition\third_party\gflags\src;E:\Augenstern\FaceRecognition\third_party\gflags\include\gflags;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>E:\FaceRecognition\include;E:\FaceRecognition\third_party\gflags\include;E:\FaceRecognition\third_party\gflags\src;E:\FaceRecognition\third_party\gflags\include\gflags;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\Augenstern\FaceRecognition\include;E:\Augenstern\FaceRecognition\third_party\gflags\include;E:\Augenstern\FaceRecognition\third_party\gflags\src;E:\Augenstern\FaceRecognition\third_party\gflags\include\gflags;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -148,7 +148,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>E:\FaceRecognition\include;E:\FaceRecognition\third_party\gflags\include;E:\FaceRecognition\third_party\gflags\src;E:\FaceRecognition\third_party\gflags\include\gflags;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\Augenstern\FaceRecognition\include;E:\Augenstern\FaceRecognition\third_party\gflags\include;E:\Augenstern\FaceRecognition\third_party\gflags\src;E:\Augenstern\FaceRecognition\third_party\gflags\include\gflags;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
@@ -167,10 +167,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;GFLAGS_IS_A_DLL=0;NO_THREADS;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>E:\FaceRecognition\include;E:\FaceRecognition\third_party\gflags\include;E:\FaceRecognition\third_party\gflags\src;E:\FaceRecognition\third_party\gflags\include\gflags;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\Augenstern\FaceRecognition\include;E:\Augenstern\FaceRecognition\third_party\gflags\include;E:\Augenstern\FaceRecognition\third_party\gflags\src;E:\Augenstern\FaceRecognition\third_party\gflags\include\gflags;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>E:\FaceRecognition\include;E:\FaceRecognition\third_party\gflags\include;E:\FaceRecognition\third_party\gflags\src;E:\FaceRecognition\third_party\gflags\include\gflags;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\Augenstern\FaceRecognition\include;E:\Augenstern\FaceRecognition\third_party\gflags\include;E:\Augenstern\FaceRecognition\third_party\gflags\src;E:\Augenstern\FaceRecognition\third_party\gflags\include\gflags;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -183,7 +183,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>E:\FaceRecognition\include;E:\FaceRecognition\third_party\gflags\include;E:\FaceRecognition\third_party\gflags\src;E:\FaceRecognition\third_party\gflags\include\gflags;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\Augenstern\FaceRecognition\include;E:\Augenstern\FaceRecognition\third_party\gflags\include;E:\Augenstern\FaceRecognition\third_party\gflags\src;E:\Augenstern\FaceRecognition\third_party\gflags\include\gflags;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -201,10 +201,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;GFLAGS_IS_A_DLL=0;NO_THREADS;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>E:\FaceRecognition\include;E:\FaceRecognition\third_party\gflags\include;E:\FaceRecognition\third_party\gflags\src;E:\FaceRecognition\third_party\gflags\include\gflags;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\Augenstern\FaceRecognition\include;E:\Augenstern\FaceRecognition\third_party\gflags\include;E:\Augenstern\FaceRecognition\third_party\gflags\src;E:\Augenstern\FaceRecognition\third_party\gflags\include\gflags;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>E:\FaceRecognition\include;E:\FaceRecognition\third_party\gflags\include;E:\FaceRecognition\third_party\gflags\src;E:\FaceRecognition\third_party\gflags\include\gflags;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\Augenstern\FaceRecognition\include;E:\Augenstern\FaceRecognition\third_party\gflags\include;E:\Augenstern\FaceRecognition\third_party\gflags\src;E:\Augenstern\FaceRecognition\third_party\gflags\include\gflags;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -216,11 +216,11 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="E:\FaceRecognition\third_party\gflags\CMakeLists.txt">
+    <CustomBuild Include="E:\Augenstern\FaceRecognition\third_party\gflags\CMakeLists.txt">
       <UseUtf8Encoding>Always</UseUtf8Encoding>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/FaceRecognition/third_party/gflags/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/Augenstern/FaceRecognition/third_party/gflags/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-D:\cmake\bin\cmake.exe -SE:/FaceRecognition -BE:/FaceRecognition/build --check-stamp-file E:/FaceRecognition/third_party/gflags/CMakeFiles/generate.stamp
+D:\cmake\bin\cmake.exe -SE:/Augenstern/FaceRecognition -BE:/Augenstern/FaceRecognition/build --check-stamp-file E:/Augenstern/FaceRecognition/third_party/gflags/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -228,12 +228,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\cmake\share\cmake-3.28\Modules\CheckCXXSymbolExists.cmake;D:\cmake\share\cmake-3.28\Modules\CheckIncludeFile.cmake;D:\cmake\share\cmake-3.28\Modules\CheckIncludeFileCXX.cmake;D:\cmake\share\cmake-3.28\Modules\CheckSymbolExists.cmake;D:\cmake\share\cmake-3.28\Modules\CheckTypeSize.cmake;E:\FaceRecognition\third_party\gflags\cmake\config.cmake.in;E:\FaceRecognition\third_party\gflags\cmake\utils.cmake;E:\FaceRecognition\third_party\gflags\cmake\version.cmake.in;E:\FaceRecognition\third_party\gflags\src\config.h.in;E:\FaceRecognition\third_party\gflags\src\gflags.h.in;E:\FaceRecognition\third_party\gflags\src\gflags_completions.h.in;E:\FaceRecognition\third_party\gflags\src\gflags_declare.h.in;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\FaceRecognition\third_party\gflags\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\cmake\share\cmake-3.28\Modules\CheckCXXSymbolExists.cmake;D:\cmake\share\cmake-3.28\Modules\CheckIncludeFile.cmake;D:\cmake\share\cmake-3.28\Modules\CheckIncludeFileCXX.cmake;D:\cmake\share\cmake-3.28\Modules\CheckSymbolExists.cmake;D:\cmake\share\cmake-3.28\Modules\CheckTypeSize.cmake;E:\Augenstern\FaceRecognition\third_party\gflags\cmake\config.cmake.in;E:\Augenstern\FaceRecognition\third_party\gflags\cmake\utils.cmake;E:\Augenstern\FaceRecognition\third_party\gflags\cmake\version.cmake.in;E:\Augenstern\FaceRecognition\third_party\gflags\src\config.h.in;E:\Augenstern\FaceRecognition\third_party\gflags\src\gflags.h.in;E:\Augenstern\FaceRecognition\third_party\gflags\src\gflags_completions.h.in;E:\Augenstern\FaceRecognition\third_party\gflags\src\gflags_declare.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\Augenstern\FaceRecognition\third_party\gflags\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/FaceRecognition/third_party/gflags/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/Augenstern/FaceRecognition/third_party/gflags/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-D:\cmake\bin\cmake.exe -SE:/FaceRecognition -BE:/FaceRecognition/build --check-stamp-file E:/FaceRecognition/third_party/gflags/CMakeFiles/generate.stamp
+D:\cmake\bin\cmake.exe -SE:/Augenstern/FaceRecognition -BE:/Augenstern/FaceRecognition/build --check-stamp-file E:/Augenstern/FaceRecognition/third_party/gflags/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -241,12 +241,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cmake\share\cmake-3.28\Modules\CheckCXXSymbolExists.cmake;D:\cmake\share\cmake-3.28\Modules\CheckIncludeFile.cmake;D:\cmake\share\cmake-3.28\Modules\CheckIncludeFileCXX.cmake;D:\cmake\share\cmake-3.28\Modules\CheckSymbolExists.cmake;D:\cmake\share\cmake-3.28\Modules\CheckTypeSize.cmake;E:\FaceRecognition\third_party\gflags\cmake\config.cmake.in;E:\FaceRecognition\third_party\gflags\cmake\utils.cmake;E:\FaceRecognition\third_party\gflags\cmake\version.cmake.in;E:\FaceRecognition\third_party\gflags\src\config.h.in;E:\FaceRecognition\third_party\gflags\src\gflags.h.in;E:\FaceRecognition\third_party\gflags\src\gflags_completions.h.in;E:\FaceRecognition\third_party\gflags\src\gflags_declare.h.in;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\FaceRecognition\third_party\gflags\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cmake\share\cmake-3.28\Modules\CheckCXXSymbolExists.cmake;D:\cmake\share\cmake-3.28\Modules\CheckIncludeFile.cmake;D:\cmake\share\cmake-3.28\Modules\CheckIncludeFileCXX.cmake;D:\cmake\share\cmake-3.28\Modules\CheckSymbolExists.cmake;D:\cmake\share\cmake-3.28\Modules\CheckTypeSize.cmake;E:\Augenstern\FaceRecognition\third_party\gflags\cmake\config.cmake.in;E:\Augenstern\FaceRecognition\third_party\gflags\cmake\utils.cmake;E:\Augenstern\FaceRecognition\third_party\gflags\cmake\version.cmake.in;E:\Augenstern\FaceRecognition\third_party\gflags\src\config.h.in;E:\Augenstern\FaceRecognition\third_party\gflags\src\gflags.h.in;E:\Augenstern\FaceRecognition\third_party\gflags\src\gflags_completions.h.in;E:\Augenstern\FaceRecognition\third_party\gflags\src\gflags_declare.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\Augenstern\FaceRecognition\third_party\gflags\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/FaceRecognition/third_party/gflags/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/Augenstern/FaceRecognition/third_party/gflags/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-D:\cmake\bin\cmake.exe -SE:/FaceRecognition -BE:/FaceRecognition/build --check-stamp-file E:/FaceRecognition/third_party/gflags/CMakeFiles/generate.stamp
+D:\cmake\bin\cmake.exe -SE:/Augenstern/FaceRecognition -BE:/Augenstern/FaceRecognition/build --check-stamp-file E:/Augenstern/FaceRecognition/third_party/gflags/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -254,12 +254,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\cmake\share\cmake-3.28\Modules\CheckCXXSymbolExists.cmake;D:\cmake\share\cmake-3.28\Modules\CheckIncludeFile.cmake;D:\cmake\share\cmake-3.28\Modules\CheckIncludeFileCXX.cmake;D:\cmake\share\cmake-3.28\Modules\CheckSymbolExists.cmake;D:\cmake\share\cmake-3.28\Modules\CheckTypeSize.cmake;E:\FaceRecognition\third_party\gflags\cmake\config.cmake.in;E:\FaceRecognition\third_party\gflags\cmake\utils.cmake;E:\FaceRecognition\third_party\gflags\cmake\version.cmake.in;E:\FaceRecognition\third_party\gflags\src\config.h.in;E:\FaceRecognition\third_party\gflags\src\gflags.h.in;E:\FaceRecognition\third_party\gflags\src\gflags_completions.h.in;E:\FaceRecognition\third_party\gflags\src\gflags_declare.h.in;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\FaceRecognition\third_party\gflags\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\cmake\share\cmake-3.28\Modules\CheckCXXSymbolExists.cmake;D:\cmake\share\cmake-3.28\Modules\CheckIncludeFile.cmake;D:\cmake\share\cmake-3.28\Modules\CheckIncludeFileCXX.cmake;D:\cmake\share\cmake-3.28\Modules\CheckSymbolExists.cmake;D:\cmake\share\cmake-3.28\Modules\CheckTypeSize.cmake;E:\Augenstern\FaceRecognition\third_party\gflags\cmake\config.cmake.in;E:\Augenstern\FaceRecognition\third_party\gflags\cmake\utils.cmake;E:\Augenstern\FaceRecognition\third_party\gflags\cmake\version.cmake.in;E:\Augenstern\FaceRecognition\third_party\gflags\src\config.h.in;E:\Augenstern\FaceRecognition\third_party\gflags\src\gflags.h.in;E:\Augenstern\FaceRecognition\third_party\gflags\src\gflags_completions.h.in;E:\Augenstern\FaceRecognition\third_party\gflags\src\gflags_declare.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\Augenstern\FaceRecognition\third_party\gflags\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/FaceRecognition/third_party/gflags/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/Augenstern/FaceRecognition/third_party/gflags/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-D:\cmake\bin\cmake.exe -SE:/FaceRecognition -BE:/FaceRecognition/build --check-stamp-file E:/FaceRecognition/third_party/gflags/CMakeFiles/generate.stamp
+D:\cmake\bin\cmake.exe -SE:/Augenstern/FaceRecognition -BE:/Augenstern/FaceRecognition/build --check-stamp-file E:/Augenstern/FaceRecognition/third_party/gflags/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -267,27 +267,27 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\cmake\share\cmake-3.28\Modules\CheckCXXSymbolExists.cmake;D:\cmake\share\cmake-3.28\Modules\CheckIncludeFile.cmake;D:\cmake\share\cmake-3.28\Modules\CheckIncludeFileCXX.cmake;D:\cmake\share\cmake-3.28\Modules\CheckSymbolExists.cmake;D:\cmake\share\cmake-3.28\Modules\CheckTypeSize.cmake;E:\FaceRecognition\third_party\gflags\cmake\config.cmake.in;E:\FaceRecognition\third_party\gflags\cmake\utils.cmake;E:\FaceRecognition\third_party\gflags\cmake\version.cmake.in;E:\FaceRecognition\third_party\gflags\src\config.h.in;E:\FaceRecognition\third_party\gflags\src\gflags.h.in;E:\FaceRecognition\third_party\gflags\src\gflags_completions.h.in;E:\FaceRecognition\third_party\gflags\src\gflags_declare.h.in;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\FaceRecognition\third_party\gflags\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\cmake\share\cmake-3.28\Modules\CheckCXXSymbolExists.cmake;D:\cmake\share\cmake-3.28\Modules\CheckIncludeFile.cmake;D:\cmake\share\cmake-3.28\Modules\CheckIncludeFileCXX.cmake;D:\cmake\share\cmake-3.28\Modules\CheckSymbolExists.cmake;D:\cmake\share\cmake-3.28\Modules\CheckTypeSize.cmake;E:\Augenstern\FaceRecognition\third_party\gflags\cmake\config.cmake.in;E:\Augenstern\FaceRecognition\third_party\gflags\cmake\utils.cmake;E:\Augenstern\FaceRecognition\third_party\gflags\cmake\version.cmake.in;E:\Augenstern\FaceRecognition\third_party\gflags\src\config.h.in;E:\Augenstern\FaceRecognition\third_party\gflags\src\gflags.h.in;E:\Augenstern\FaceRecognition\third_party\gflags\src\gflags_completions.h.in;E:\Augenstern\FaceRecognition\third_party\gflags\src\gflags_declare.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\Augenstern\FaceRecognition\third_party\gflags\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="E:\FaceRecognition\third_party\gflags\src\gflags.cc" />
-    <ClCompile Include="E:\FaceRecognition\third_party\gflags\src\gflags_reporting.cc" />
-    <ClCompile Include="E:\FaceRecognition\third_party\gflags\src\gflags_completions.cc" />
-    <ClCompile Include="E:\FaceRecognition\third_party\gflags\src\windows_port.cc" />
-    <ClInclude Include="E:\FaceRecognition\third_party\gflags\include\gflags\config.h" />
-    <ClInclude Include="E:\FaceRecognition\third_party\gflags\src\util.h" />
-    <ClInclude Include="E:\FaceRecognition\third_party\gflags\src\mutex.h" />
-    <ClInclude Include="E:\FaceRecognition\third_party\gflags\src\windows_port.h" />
-    <ClInclude Include="E:\FaceRecognition\third_party\gflags\include\gflags\gflags.h" />
-    <ClInclude Include="E:\FaceRecognition\third_party\gflags\include\gflags\gflags_declare.h" />
-    <ClInclude Include="E:\FaceRecognition\third_party\gflags\include\gflags\gflags_completions.h" />
+    <ClCompile Include="E:\Augenstern\FaceRecognition\third_party\gflags\src\gflags.cc" />
+    <ClCompile Include="E:\Augenstern\FaceRecognition\third_party\gflags\src\gflags_reporting.cc" />
+    <ClCompile Include="E:\Augenstern\FaceRecognition\third_party\gflags\src\gflags_completions.cc" />
+    <ClCompile Include="E:\Augenstern\FaceRecognition\third_party\gflags\src\windows_port.cc" />
+    <ClInclude Include="E:\Augenstern\FaceRecognition\third_party\gflags\include\gflags\config.h" />
+    <ClInclude Include="E:\Augenstern\FaceRecognition\third_party\gflags\src\util.h" />
+    <ClInclude Include="E:\Augenstern\FaceRecognition\third_party\gflags\src\mutex.h" />
+    <ClInclude Include="E:\Augenstern\FaceRecognition\third_party\gflags\src\windows_port.h" />
+    <ClInclude Include="E:\Augenstern\FaceRecognition\third_party\gflags\include\gflags\gflags.h" />
+    <ClInclude Include="E:\Augenstern\FaceRecognition\third_party\gflags\include\gflags\gflags_declare.h" />
+    <ClInclude Include="E:\Augenstern\FaceRecognition\third_party\gflags\include\gflags\gflags_completions.h" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="E:\FaceRecognition\build\ZERO_CHECK.vcxproj">
-      <Project>{AC5CC9C4-8FB2-301B-9000-39B01EE5DB8B}</Project>
+    <ProjectReference Include="E:\Augenstern\FaceRecognition\build\ZERO_CHECK.vcxproj">
+      <Project>{0F31B470-AAC1-32AE-AEEB-72C1E09069ED}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>

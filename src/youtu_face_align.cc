@@ -77,8 +77,10 @@ Status YoutuFaceAlign::ProcessSDKOutput(std::shared_ptr<TNNSDKOutput> output_) {
         float *label_ptr = static_cast<float*>(pred_label->GetData());
         if(label_ptr[0] > face_threshold) {
             prev_face = true;
+            LOGE("face detected label_ptr[0] is: %f\n",label_ptr[0]);
         }
         else {
+            LOGE("No face detected label_ptr[0] is: %f\n",label_ptr[0]);
             prev_face = false;
         }
     } else if(phase == 2) {

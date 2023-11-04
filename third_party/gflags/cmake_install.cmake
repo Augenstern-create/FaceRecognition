@@ -1,4 +1,4 @@
-# Install script for directory: E:/FaceRecognition/third_party/gflags
+# Install script for directory: E:/Augenstern/FaceRecognition/third_party/gflags
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -70,6 +70,7 @@ std::shared_ptr<TNNSDKOutput> BlazeFaceDetector::CreateSDKOutput() {
 }
 
 Status BlazeFaceDetector::ProcessSDKOutput(std::shared_ptr<TNNSDKOutput> output_) {
+    LOGE("BlazeFaceDetector::ProcessSDKOutput\n");
     Status status = TNN_OK;
     auto option = dynamic_cast<BlazeFaceDetectorOption *>(option_.get());
     RETURN_VALUE_ON_NEQ(!option, false,
@@ -131,6 +132,23 @@ void BlazeFaceDetector::GenerateBBox(std::vector<BlazeFaceInfo> &detects, TNN_NS
 
 void BlazeFaceDetector::BlendingNMS(std::vector<BlazeFaceInfo> &input, std::vector<BlazeFaceInfo> &output, float min_suppression_threshold) {
     ::TNN_NS::NMS(input, output, min_suppression_threshold, TNNBlendingNMS);
+    for (const BlazeFaceInfo& face : output) {
+        // if(face.score<0.8f)break;
+    // 打印 BlazeFaceInfo 中的信息
+    printf("Image Width: %d\n", face.image_width);
+    printf("Image Height: %d\n", face.image_height);
+    printf("Score: %f\n", face.score);
+    printf("Bounding Box (x1, y1, x2, y2): %f, %f, %f, %f\n", face.x1, face.y1, face.x2, face.y2);
+    
+    // 打印关键点信息
+    printf("Key Points:\n");
+    for (const auto& key_point : face.key_points) {
+        printf("  x: %f, y: %f\n", key_point.first, key_point.second);
+    }
+    
+    // 换行以分隔不同的 BlazeFaceInfo 对象
+    printf("\n");
+}
 }
 
 }

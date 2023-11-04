@@ -51,7 +51,7 @@ add_library(gflags_nothreads_static STATIC IMPORTED)
 
 set_target_properties(gflags_nothreads_static PROPERTIES
   INTERFACE_COMPILE_DEFINITIONS "GFLAGS_IS_A_DLL=0"
-  INTERFACE_INCLUDE_DIRECTORIES "E:/FaceRecognition/third_party/gflags/include"
+  INTERFACE_INCLUDE_DIRECTORIES "E:/Augenstern/FaceRecognition/third_party/gflags/include"
   INTERFACE_LINK_LIBRARIES "shlwapi.lib"
 )
 
@@ -59,28 +59,28 @@ set_target_properties(gflags_nothreads_static PROPERTIES
 set_property(TARGET gflags_nothreads_static APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(gflags_nothreads_static PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "E:/FaceRecognition/third_party/gflags/Debug/gflags_nothreads_static.lib"
+  IMPORTED_LOCATION_DEBUG "E:/Augenstern/FaceRecognition/third_party/gflags/Debug/gflags_nothreads_static.lib"
   )
 
 # Import target "gflags_nothreads_static" for configuration "Release"
 set_property(TARGET gflags_nothreads_static APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(gflags_nothreads_static PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "E:/FaceRecognition/third_party/gflags/Release/gflags_nothreads_static.lib"
+  IMPORTED_LOCATION_RELEASE "E:/Augenstern/FaceRecognition/third_party/gflags/Release/gflags_nothreads_static.lib"
   )
 
 # Import target "gflags_nothreads_static" for configuration "MinSizeRel"
 set_property(TARGET gflags_nothreads_static APPEND PROPERTY IMPORTED_CONFIGURATIONS MINSIZEREL)
 set_target_properties(gflags_nothreads_static PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_MINSIZEREL "CXX"
-  IMPORTED_LOCATION_MINSIZEREL "E:/FaceRecognition/third_party/gflags/MinSizeRel/gflags_nothreads_static.lib"
+  IMPORTED_LOCATION_MINSIZEREL "E:/Augenstern/FaceRecognition/third_party/gflags/MinSizeRel/gflags_nothreads_static.lib"
   )
 
 # Import target "gflags_nothreads_static" for configuration "RelWithDebInfo"
 set_property(TARGET gflags_nothreads_static APPEND PROPERTY IMPORTED_CONFIGURATIONS RELWITHDEBINFO)
 set_target_properties(gflags_nothreads_static PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_RELWITHDEBINFO "CXX"
-  IMPORTED_LOCATION_RELWITHDEBINFO "E:/FaceRecognition/third_party/gflags/RelWithDebInfo/gflags_nothreads_static.lib"
+  IMPORTED_LOCATION_RELWITHDEBINFO "E:/Augenstern/FaceRecognition/third_party/gflags/RelWithDebInfo/gflags_nothreads_static.lib"
   )
 
 # This file does not depend on other imported targets which have

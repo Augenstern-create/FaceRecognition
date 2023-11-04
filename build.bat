@@ -33,3 +33,6 @@ if not exist %EXAMPLE_INSTALL_PATH% (
 for %%e in (%TNN_BIN_PATH%\*.dll) do copy "%%e" %EXAMPLE_INSTALL_PATH%
 for /R %OpenCV_DIR% %%e in (*.dll) do copy "%%e" %EXAMPLE_INSTALL_PATH%
 
+cd %EXAMPLE_INSTALL_PATH%
+.\DemoFaceRecognition.exe -d E:\models
+cd ..\..

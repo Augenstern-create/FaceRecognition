@@ -812,6 +812,7 @@ TNN_NS::Status TNNSDKSample::DumpBlob(const BlobMap& blob_map, std::string outpu
 
 TNN_NS::Status TNNSDKSample::Predict(std::shared_ptr<TNNSDKInput> input, std::shared_ptr<TNNSDKOutput> &output) {
     Status status = TNN_OK;
+    LOGE(" TNNSDKSample::Predict \n");
     if (!input || input->IsEmpty()) {
         status = Status(TNNERR_PARAM_ERR, "input image is empty ,please check!");
         LOGE("input image is empty ,please check!\n");
@@ -895,13 +896,12 @@ TNN_NS::Status TNNSDKSample::Predict(std::shared_ptr<TNNSDKInput> input, std::sh
         double elapsed = sample_time.GetTime();
         bench_result_.AddTime(elapsed);
 #endif
-        
         ProcessSDKOutput(output);
 #if TNN_SDK_ENABLE_BENCHMARK
     }
 #endif
     // Detection done
-    
+    LOGE("TNNSDKSample::Predict stop\n");
     return status;
 }
 
